@@ -62,6 +62,52 @@ La forma de utilizarlo es tal cual lo harías en tu equipo local, por ejemplo:
 ```
 
 
+## Como hacer debug 
+
+Realmente es importante poder desarrollar LARAVEL desde un contenedor de docker, pero un ambiente de desarrollo no estaria completo sin la capacidad de hacer debug.
+
+Por esta razón se implementa XDEBUG, a continuacion como utilizarlo.
+
+**VSCODE**
+
+Instalar la siguiente extension:  
+
+[PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
+
+![PHP Debug](/.images/vcode_debug01.png)
+
+Segun algunos articulos leidos, recomiendan que se utilice en el navegador la extension llamada [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc) ; pero a mi no me ha hecho falta. Asi que si te llegase a fallar, instalala.  
+
+![Xdebug Helper](/.images/vcode_debug02.png)  
+
+Empieza a hacer debug
+
+![Inicia a escuchar el debug](/.images/vcode_debug03.png)  
+
+
+
+**PHPStorm**
+
+Para PHPStorm no se requiere instalar extensiones adicionales, unicamente seguir los siguientes pasos:
+
+Configurar Debug.
+
+Ingresar a Setting > PHP > Debug
+
+![Configuracion de Debug](/.images/phpstorm_debug01.png)
+
+
+Configurar el mapeo de carpetas del servidor llamador **ace3**  
+
+![Mapeo de Carpetas locales](/.images/phpstorm_debug02.png)  
+
+Empieza a escuchar el puerto debug.  
+
+![Escuchar el puerto Debug](/.images/phpstorm_debug03.png)  
+
+
+
+
 ## Versiones implementadas
 
 PHP: **8.2.1**  
