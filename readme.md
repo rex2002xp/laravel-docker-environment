@@ -114,3 +114,11 @@ PHP: **8.2.1**
 Laravel: **v9.48.0**  
 MySQL: **8.0-oracle** 
 
+
+
+## Documentacion consultada.   
+
+
+[Debugging Laravel with Xdebug3 and Docker Compose](https://igniz87.medium.com/debugging-laravel-with-xdebug3-and-docker-compose-187a66981869)  
+
+[Como crear un entorno de desarrollo local Laravel Docker](https://youtu.be/ziNXj9CrCQM)
