@@ -12,9 +12,7 @@ Se parte de la consideracion que este ambiente esta montado sobre docker, de est
 Generar la imagen base de PHP, con el comando:
 
 ```shell script
-
 docker build ./docker/php/build -t php-dev:8-alpine
-
 ```
 
 **Paso 2 - Arrancar el ambiente de desarrollo**
@@ -22,9 +20,7 @@ docker build ./docker/php/build -t php-dev:8-alpine
 Se debe ejecutar las imagenes del ambiente.
 
 ```shell script
-
 docker-compose up -d
-
 ```
 
 ### Paso Opcional - Version reciente de LARAVEL
@@ -42,10 +38,8 @@ rm -r src && mkdir src
 ```
 
 ```shell script
-
 docker run --rm --interactive --tty \ 
        --volume $PWD/src:/app composer create-project laravel/laravel .
-
 ```
 
 ## Trabajando con artisan dentro del contenedor.
@@ -62,10 +56,10 @@ chmod +x artisan
 
 La forma de utilizarlo es tal cual lo harias en tu equipo local, por ejemplo:
 
+
 ```shell script
 ./artisan help
-
-````
+```
 
 
 ## Versiones implementadas
