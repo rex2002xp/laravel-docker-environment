@@ -38,7 +38,7 @@ rm -r src && mkdir src
 ```
 
 ```shell script
-docker run --rm --interactive --tty \ 
+docker run --rm --interactive --tty \
        --volume $PWD/src:/app composer create-project laravel/laravel .
 ```
 
