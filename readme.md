@@ -15,7 +15,15 @@ Generar la imagen base de PHP, con el comando:
 docker build ./docker/php/build -t php-dev:8-alpine
 ```
 
-**Paso 2 - Arrancar el ambiente de desarrollo**
+**Paso 2 - Generación de Imagen Base de Node**
+
+Generar la imagen base de NODE, con el comando:
+
+```shell script
+docker build ./docker/node/build -t laravel-node:16.18
+```
+
+**Paso 3 - Arrancar el ambiente de desarrollo**
 
 Se debe ejecutar las imágenes del ambiente.
 
