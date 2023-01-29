@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker run --rm --interactive --tty --volume $PWD/src:/app composer $@
+docker run --rm --interactive --tty \
+       --volume $PWD/src:/app composer $@

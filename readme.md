@@ -7,20 +7,16 @@ Se parte de la consideración que este ambiente está montado sobre docker, de e
 
 ## Instalación
 
-**Paso 1 - Generación de Imagen Base PHP**
-
-Generar la imagen base de PHP, con el comando:
+**Paso 1 - Generación de Imagen Base de Laravel con Node 18**
 
 ```shell script
-docker build ./docker/php/build -t php-dev:8-alpine
+docker build ./docker/apache/build -t webserver:apache-node-bullseye
 ```
 
-**Paso 2 - Generación de Imagen Base de Node**
-
-Generar la imagen base de NODE, con el comando:
+**Paso 2 - Generación de Imagen con Node 18**
 
 ```shell script
-docker build ./docker/node/build -t laravel-node:16.18
+docker build ./docker/node/build -t node-console:18.13-bullseye-slim
 ```
 
 **Paso 3 - Arrancar el ambiente de desarrollo**

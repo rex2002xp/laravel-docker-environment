@@ -19,7 +19,7 @@ services:
       - laravel
 
   webserver:
-    image: php:8-apache-bullseye
+    image: webserver:apache-node-bullseye
     container_name: webserver
     restart: unless-stopped
     ports:

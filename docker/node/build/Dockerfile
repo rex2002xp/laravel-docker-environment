@@ -1,5 +1,5 @@
 # Specify a base image
-FROM node:16.18-alpine3.17
+FROM node:18.13-alpine3.17
 
 #Install some dependencies
 
